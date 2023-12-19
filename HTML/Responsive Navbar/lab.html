@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form1">
+        <p id="ab" ></p>
+        <pre>
+            Num1: <input type="text" id="a">
+            Num2: <input type="text" id="ab1"><br>
+            sum is: <input type="text" id="ab1">
+            <input type="button" value="clickme" onclick="printvalue()">
+        </pre>
+    </form>
+    <script>
+        function printvalue(){
+            var a=parseInt(document.getElementById("a").value);
+            var b=parseInt(document.getElementById("ab1").value);
+            var c=a+b;
+            document.getElementById("ab").innerHTML=c;
+        }
+    </script>
+</body>
+</html>
