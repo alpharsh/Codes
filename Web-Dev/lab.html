@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr =[];
+        var size = parseInt(prompt("Enter the size of array"));
+        for(var i=0;i<size;i++){
+            arr[i]=prompt("Enter the Value"+(i+1)+"Value");
+        }
+        for(j in arr){
+            document.writeln("values of array are"+j, "<br>");
+        }
+        for(j of arr)
+        {
+            document.writeln("values of array are"+j, "<br>");
+        }
+    </script>
+</body>
+</html>
