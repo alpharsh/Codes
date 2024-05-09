@@ -1,29 +1,47 @@
-import java.util.*;
+// Java program to check Adam Number 
+import java.util.Scanner;
 
-class adamnumber{
-    public static void main(String args[]){
-        int adam;
-        System.out.println("Enter any no to check weather it is an adam no or not: ");
-        Scanner sc = new Scanner(System.in);
-        adam = sc.nextInt();
-        int numSq = adam * adam;
-        int n= adam;
-        int rev=0;
-        int sqrev=adam*adam;
-        while(n!=0){
-            int d= n%10;
-            rev=(rev*10)+d;
-            n=n/10;
-        }
-        n= rev*rev;
-        while(n!=0){
-            int d= n%10;
-            sqrev= (sqrev*10)+d;
-            n=n/10;
-        }
-        if(sqrev==numSq)
-        System.out.println("The entered no is not an Adam number: "+ adam);
-        else
-        System.out.println("Entered amount is  an Adam no");
-    }
-}
+public class adamnumber { 
+	// To reverse Digits of numbers 
+	static int reverseDigits(int num) 
+	{ 
+		int rev = 0; 
+		while (num > 0) 
+		{ 
+			rev = rev * 10 + num % 10; 
+			num /= 10; 
+		} 
+		return rev; 
+	} 
+
+	// To square number 
+	static int square(int num) 
+	{ 
+		return (num * num); 
+	} 
+
+	// To check Adam Number 
+	static boolean checkAdamNumber(int num) 
+	{ 
+		int a = square(num); 
+		int b = square(reverseDigits(num)); 
+		
+		if (a == reverseDigits(b)) 
+		return true; 
+		return false;		 
+	} 
+
+	// Driver program to test above functions 
+	public static void main(String[] args) 
+	{ 
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter a no to check if it is an Adam Number: ");
+		int num = scanner.nextInt();
+		
+		if (checkAdamNumber(num)) 
+		System.out.println("Adam Number"); 
+		else
+		System.out.println("Not a Adam Number");	 
+	} 
+
+} 
