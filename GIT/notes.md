@@ -36,3 +36,5 @@
 - `git checkout -b <new-branch-name>` : Create and switch to a new branch
 - `git branch` : Show all branches and indicate the current branch
 - `git log` : Show commit history
+- `git branch -d <branchname>` : Delete a local branch if it has been fully merged with its upstream
+- `git branch -D <branchname>` : If the <branchname> branch has not been fully merged but you still want to delete it
