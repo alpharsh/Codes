@@ -38,7 +38,7 @@ int main()
     m.erase("uttar pradesh");
     cout << m.size() << endl;
 
-    // print all keys and values in map m
+    // print all keys and values in map m using iterator
     for(auto i:m){
         cout << i.first << " " << i.second << endl;
     }
