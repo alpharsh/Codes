@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    // unordered_map is a hash table based associative container that stores of key value and a mapped value, with O(1) average time complexity for search, insert and delete operations. & for ordered_map, it is O(logn) 
+    // unordered_map is a hash table based associative container that stores of key value and a mapped value, with O(1) average time complexity for search, insert and delete operations. & for ordered_map, it is O(logn)
 
     // creating a map m
     unordered_map<string, int> m; 
