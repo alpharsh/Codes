@@ -38,3 +38,9 @@
 - `git log` : Show commit history
 - `git branch -d <branchname>` : Delete a local branch if it has been fully merged with its upstream
 - `git branch -D <branchname>` : If the <branchname> branch has not been fully merged but you still want to delete it
+
+#### Git Commands to Go Back to an Old Commit and Update Main Branch
+- `git checkout -b temp-branch <SHA>` : Checkout the specific commit
+- `git checkout main` : Switch to the main branch
+- `git reset --hard <SHA>` : Reset the main branch to the specified commit
+- `git push origin main --force` : Force push changes to the remote main branch (if necessary)
