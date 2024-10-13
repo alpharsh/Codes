@@ -44,3 +44,4 @@
 - `git checkout main` : Switch to the main branch
 - `git reset --hard <SHA>` : Reset the main branch to the specified commit
 - `git push origin main --force` : Force push changes to the remote main branch (if necessary)
+- `Remove-Item -Recurse -Force .git` : Removes the git tracking of repo
